@@ -20,7 +20,8 @@ $imglink = "https://eparcel15.herokuapp.com/1-29.png";
  
 if($gettagss == 'imagestag')
 {
-  echo $callback.'(' . json_encode($arr) . ')';
+  //echo $callback.'(' . json_encode($arr) . ')';
+    echo json_encode($arr);
 } 
 
 ?>
