@@ -18,6 +18,7 @@ $imglink = "https://eparcel15.herokuapp.com/1-29.png";
 
     $gettagss = $_REQUEST['tags'];
  echo $gettagss;
+echo $callback.'(' . json_encode($arr) . ')';
 if($gettagss == 'imagestag')
 {
   //echo $callback.'(' . json_encode($arr) . ')';
