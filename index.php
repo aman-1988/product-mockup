@@ -14,9 +14,13 @@ $imglink = "https://eparcel15.herokuapp.com/1-29.png";
     $arr['name']="Ravishanker";
     $arr['src']=$imglink;
     $arr['age']=32; 
-    $arr['location']="India";   
+    $arr['location']="India"; 
+
+    $gettagss = $_REQUEST['tags'];
  
-    echo $callback.'(' . json_encode($arr) . ')';
- 
+if($gettagss == 'imagestag')
+{
+  echo $callback.'(' . json_encode($arr) . ')';
+} 
 
 ?>
