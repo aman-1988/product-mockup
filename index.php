@@ -17,7 +17,7 @@ $imglink = "https://eparcel15.herokuapp.com/1-29.png";
     $arr['location']="India"; 
 
     $gettagss = $_REQUEST['tags'];
- 
+ echo $gettagss;
 if($gettagss == 'imagestag')
 {
   //echo $callback.'(' . json_encode($arr) . ')';
