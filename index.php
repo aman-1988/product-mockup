@@ -12,7 +12,7 @@ $imglink = "https://eparcel15.herokuapp.com/1-29.png";
     }   
     $arr =array();
     $arr['name']="Ravishanker";
-    $arr['name']=$imglink;
+    $arr['src']=$imglink;
     $arr['age']=32; 
     $arr['location']="India";   
  
