@@ -6,6 +6,7 @@
 	width: 100%;
 	height: auto;
 	display: block;
+	max-width:auto;
 }
 .mockupssall {
 	max-width: 600p;
