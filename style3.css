@@ -183,7 +183,7 @@ clip-path:polygon(0.7% 0%, 2% 5%, 30% 100%, 31% 102%, 36% 101%, 32% 101%, 35% 95
     /*transform: rotate(-1deg);*/
 }
 .image-container-bed .main-img {
-	height: 122% !important;
+	height: 100% !important;
 	top: -9.7%;
 	left: -13.8%;
 	width: 120% !important;
