@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+   <meta name="description" content="" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <title>Animation Frame</title>
+   <link rel="icon" type="image/png" href="favicon.png" />
+   <link rel="stylesheet" href="style3.css" />
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <style>
+	.col-lg-6, .col-md-6, .col-sm-6
+	{
+	margin-bottom: 2%;
+	}
+	.modal-header
+	{
+	padding-bottom: 0px !important;
+    border: none !important;
+    position: absolute;
+    z-index: 9999;
+    right: 0px;
+	}
+	.modal-body
+	{
+	padding:0px;
+	}
+	
+	
+	.image-container-fold {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: url(image.jpg) left 99% no-repeat;
+    height: 100%;
+    overflow: hidden;
+    background-size: 145% 126%;
+    /* max-height: 100vh; */
+    position: relative;
+}
+
+.image-container-fold-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background: url(image.jpg) 0 0 no-repeat;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+	</style>
+    
+</head>
+
+<body>
+
+<div class="container">
+<div class="row">
+
+
+
+<div class="col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="row">
+
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="wrapper" data-toggle="modal" data-target="#myModal1">
+         <div class="image-container-bed">
+            <img class="main-img" src="image.jpg" />
+            <img class="shadow-img" src="shadow-skewed-left.png" />
+         </div>
+         <div class="bottom-container-bed">
+            <img class="" src="bed-bg.png" alt="beg background" />
+         </div>
+      </div>
+</div>
+
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+ <div class="wrapper" data-toggle="modal" data-target="#myModal2">
+         <div class="image-container-fold">
+            <img class="shadow-img-curve" src="Image_7_2.png" />
+         </div>
+      </div>
+</div>
+
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="wrapper" data-toggle="modal" data-target="#myModal3">
+
+         <div class="image-container-fold-bg">
+            <!-- <img src="image.jpg" alt="" /> -->
+         </div>
+         <div class="image-container-fold-two">
+            <img class="main-img-fold-two" src="image.jpg"  alt=""/>
+            <img class="shadow-img-curve-two" src="Image_8.png"  alt=""/>
+         </div>         
+      </div>
+</div>
+
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="wrapper" style="height:100%;" data-toggle="modal" data-target="#myModal4">
+         <div class="image-container-frame" style="height:64%;">
+            <img class="main-img" src="image.jpg" style="height:147.5%;" />
+            <img class="shadow-img" src="shadow-frame.png" />
+         </div>
+         <div class="bottom-container-frame" style="height:100%;">
+            <img class="" src="frame-bg.png" style="height:100%;" alt="frame background" />
+         </div>
+   </div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="wrapper" data-toggle="modal" data-target="#myModal5">    
+      <div style="width:100%; margin:0 auto; padding-top:6%;">
+         <div class="image-container">
+            <img class="main-img" src="image.jpg" />
+            <img class="shadow-img" src="shadow.png" />
+         </div>
+        </div>         
+          <div style="width:100%;  margin-top:-8%;">
+         <div class="bottom-container">
+            <img class="" src="image-couch.png" alt="couch" />
+         </div>
+         </div>
+   </div>
+</div>
+
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="wrapper" data-toggle="modal" data-target="#myModal6">  
+      <div style="width:100%; margin:0 auto; padding-top:12%;">
+         <div class="image-container_bed_front">
+            <img class="main-img_bed_front" src="image.jpg" />
+            <img class="shadow-img_bed_front" src="shadow.png" />
+         </div>
+         </div>         
+         <div style="width:100%;  margin-top:-4%;">
+         <div class="bottom-container">
+            <img class="" src="image-bed.png" alt="couch" />
+         </div>
+         </div>         
+      </div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="wrapper" data-toggle="modal" data-target="#myModal7">   
+      <div class="container-gradient">      
+      <div style="width:67%; margin:0 auto;">
+         <div class="image-container_bed_front_two">
+            <img class="main-img_bed_front_two" src="image.jpg" />
+            <img class="shadow-img_bed_front_two" src="shadow.png" />
+         </div>
+       </div>         
+         <div class="bottom-container">
+            <img class="" src="image-bed-bg-frame.png" alt="couch" />
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6">
+<div class="wrapper" data-toggle="modal" data-target="#myModal8">     
+      <div style="width:100%; margin:0 auto; padding-top:12%;">
+         <div class="image-container_front_three">
+            <img class="main-img_front_three" src="image.jpg" />
+            <img class="shadow-img_front_three" src="shadow.png" />
+         </div>
+      </div>         
+        <div style="width:100%;  margin-top:0%;"> 
+         <div class="bottom-container">
+            <img class="" src="image-bed-2.png" alt="couch" />
+         </div>
+        </div>          
+      </div>
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="col-sm-6 col-md-6 col-lg-6"></div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>        
+        <div class="modal-body">
+          <div class="wrapper">
+         <div class="image-container-bed">
+            <img class="main-img" src="image.jpg" />
+            <img class="shadow-img" src="shadow-skewed-left.png" />
+         </div>
+         <div class="bottom-container-bed">
+            <img class="" src="bed-bg.png" alt="beg background" />
+         </div>
+      </div>
+        </div>     
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>       
+        <div class="modal-body">
+          <div class="wrapper">
+         <div class="image-container-fold">
+            <img class="shadow-img-curve" src="Image_7_2.png" />
+         </div>
+      </div>
+        </div>     
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+ <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        <div class="modal-body">
+          <div class="wrapper">
+         <div class="image-container-fold-bg">
+            <!-- <img src="image.jpg" alt="" /> -->
+         </div>
+         <div class="image-container-fold-two">
+            <img class="main-img-fold-two" src="image.jpg"  alt=""/>
+            <img class="shadow-img-curve-two" src="Image_8.png"  alt=""/>
+         </div>         
+      </div>
+        </div>        
+      </div>      
+    </div>
+  </div> 
+  
+  
+  
+  
+<!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        <div class="modal-body">
+      <div class="wrapper" >
+         <div class="image-container-frame">
+            <img class="main-img" src="image.jpg"  />
+            <img class="shadow-img" src="shadow-frame.png" />
+         </div>
+         <div class="bottom-container-frame" >
+            <img class="" src="frame-bg.png" alt="frame background" />
+         </div>
+   </div>    
+        </div>        
+      </div>      
+    </div>
+  </div>   
+ 
+ 
+ 
+
+
+ 
+<!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        <div class="modal-body">
+       <div class="wrapper">    
+      <div style="width:100%; margin:0 auto; padding-top:5%;">
+         <div class="image-container">
+            <img class="main-img" src="image.jpg" />
+            <img class="shadow-img" src="shadow.png" />
+         </div>
+        </div>         
+          <div style="width:100%;  margin-top:-7%;">
+         <div class="bottom-container">
+            <img class="" src="image-couch.png" alt="couch" />
+         </div>
+         </div>
+   </div>   
+        </div>        
+      </div>      
+    </div>
+  </div>  
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        <div class="modal-body">
+        <div class="wrapper">  
+      <div style="width:100%; margin:0 auto;  padding-top:5%;">
+         <div class="image-container_bed_front">
+            <img class="main-img_bed_front" src="image.jpg" />
+            <img class="shadow-img_bed_front" src="shadow.png" />
+         </div>
+         </div>         
+         <div style="width:100%;  margin-top:-4%;">
+         <div class="bottom-container">
+            <img class="" src="image-bed.png" alt="couch" />
+         </div>
+         </div>         
+      </div>  
+        </div>        
+      </div>      
+    </div>
+  </div> 
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        <div class="modal-body">
+          <div class="wrapper">   
+      <div class="container-gradient">      
+      <div style="width:67%; margin:0 auto;">
+         <div class="image-container_bed_front_two">
+            <img class="main-img_bed_front_two" src="image.jpg" />
+            <img class="shadow-img_bed_front_two" src="shadow.png" />
+         </div>
+       </div>         
+         <div class="bottom-container">
+            <img class="" src="image-bed-bg-frame.png" alt="couch" />
+         </div>
+      </div>
+   </div>
+        </div>        
+      </div>      
+    </div>
+  </div> 
+
+
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+        <div class="modal-body">
+      <div class="wrapper">     
+      <div style="width:100%; margin:0 auto; padding-top:12%;">
+         <div class="image-container_front_three">
+            <img class="main-img_front_three" src="image.jpg" />
+            <img class="shadow-img_front_three" src="shadow.png" />
+         </div>
+      </div>         
+        <div style="width:100%;  margin-top:0%;"> 
+         <div class="bottom-container">
+            <img class="" src="image-bed-2.png" alt="couch" />
+         </div>
+        </div>          
+      </div>    
+        </div>        
+      </div>      
+    </div>
+  </div> 
+
+
+
+  
+  
+</body>
+</html>
