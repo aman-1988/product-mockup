@@ -4,9 +4,9 @@
 }
 .mockupssall img {
 	width: 100%;
-	height: auto;
+	/* height: auto; */
 	display: block;
-	max-width:auto;
+	max-width:fit-content;
 }
 .mockupssall {
 	max-width: 600p;
