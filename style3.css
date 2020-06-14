@@ -141,7 +141,7 @@
     background-size: 104% auto;
     position: relative;
     height: 100% !important;
-    opacity: .8;
+    opacity: .9;
     left: 0;
     right: 0;
 }
@@ -248,7 +248,7 @@
 .image-container-frame .shadow-img2 {
     width: 82% !important;
     height: 100% !important;
-    opacity: .6;
+    opacity: .4;
 	position: relative !important;
 }
 .bottom-container-frame {
