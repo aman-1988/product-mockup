@@ -186,7 +186,8 @@
     right: 0;
     background: url(shadow-skewed-left.png) -8% 9% no-repeat;
     /* transform: rotate(-1deg); */
-    background-size: 87% 85%;
+    /* background-size: 87% 85%; */
+    background-size: 94% 88%;
     /*transform: rotate(-1deg);*/
 }
 .image-container-bed .main-img3 {
