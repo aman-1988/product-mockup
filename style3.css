@@ -40,7 +40,7 @@
 }
 .shadow-img {
     position: relative;
-    width: 101% !important;
+    width: 101.5% !important;
     height: 55% !important;
     opacity: .4;
     top: -0.1%;
@@ -51,7 +51,7 @@
     position: relative;
     margin: 0 auto;
     background: url(shadow.png) 0 0 no-repeat;
-    background-size: 101.8% 102%;
+    background-size: 101.5% 102.2%;
     top: 1%;
 }
 
