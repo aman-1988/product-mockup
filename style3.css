@@ -289,14 +289,14 @@ clip-path:polygon(9% 12%, 13% 13%, 14% 13%, 14% 13%, 17% 13%, 11% 13%, 23% 14%, 
     position: relative;
     margin: 0 auto;
     background: url(shadow.png) 0 0 no-repeat;
-    background-size: 101% 101%;
+    background-size: 101.8% 101.8%;
     top: 1%;
 }
 
 .shadow-img_bed_front {
     position: absolute;
     width: 101% !important;
-    height: 102% !important;
+    height: 103% !important;
     opacity: .4;
     top: -1.1%;
 }
