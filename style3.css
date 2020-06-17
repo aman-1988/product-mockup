@@ -324,13 +324,13 @@ clip-path:polygon(9% 12%, 13% 13%, 14% 13%, 14% 13%, 17% 13%, 11% 13%, 23% 14%, 
     position: relative;
     margin: 0 auto;
     background: url(shadow.png) 0 0 no-repeat;
-    background-size: 102% 101.5%;
+    background-size: 101.5% 101.5%;
     top: 1%;
 }
 
 .shadow-img_front_three {
     position: absolute;
-    width: 101% !important;
+    width: 101.5% !important;
     height: 103% !important;
     opacity: .4;
     top: -1.1%;
