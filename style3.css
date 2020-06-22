@@ -125,14 +125,14 @@
 
 
 .image-container-fold:after {
-   height: 9px;
+   height: 20px;
     content: '';
     width: 100%;
     position: absolute;
     transform: rotate(22deg);
-    top: 8%;
-    background: #0000001c;
-    box-shadow: 0px 7px 14px #000000;
+    top: 7%;
+    background: #00000005;
+    box-shadow: 0px 20px 25px #000000;
     left: 16%;
 }
 
