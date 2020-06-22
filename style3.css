@@ -125,32 +125,32 @@
 
 
 .image-container-fold:after {
-    height: 1px;
+   height: 9px;
     content: '';
     width: 100%;
     position: absolute;
     transform: rotate(22deg);
-    top: 105px;
+    top: 8%;
     background: #0000001c;
-    box-shadow: 0 -3px 7px #000000;
-    left: 73px;
+    box-shadow: 0px 7px 14px #000000;
+    left: 16%;
 }
 
 .image-container-fold:before {
-   height: 8px;
+  height: 20px;
     content: '';
     width: 112%;
     position: absolute;
     transform: rotate(26deg);
     /* top: 105px; */
     background: #35353500;
-    box-shadow: 0px -13px 14px #000000;
-    left: -31px;
+    box-shadow: 0px -17px 16px #000000;
+    left: -7%;
     top: 50%;
-	}
+}
 	
 .shadow-img-curve {
-	opacity: .8;
+	opacity: .5;
 }
 /*Page 3*/
 .image-container-fold-two {
