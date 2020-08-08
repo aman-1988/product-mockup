@@ -10,6 +10,7 @@ if(isset($HTTP_RAW_POST_DATA)) {
 else
 {
     $_POST['extra']='2.POST Request from hayageek.com';
-    echo json_encode($_POST);
+    //echo json_encode($_POST);
+ echo "aman";
 }
 ?>
