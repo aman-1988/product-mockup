@@ -15,7 +15,7 @@ else
  $age = $_POST['age'];
  if($age == "22222")
  {
- echo "<img src='http://apitest.harjihousing.com/image-preview-upload/uploads/Mens-Summer-Fashion.png'>";
+ echo "http://apitest.harjihousing.com/image-preview-upload/uploads/Mens-Summer-Fashion.png";
  }
  //echo $name." - ".$age;
  //echo "aman";
