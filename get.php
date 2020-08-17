@@ -11,6 +11,7 @@ else
 {
     $_POST['extra']='2.POST Request from hayageek.com';
   //  echo json_encode($_POST);
- echo "aman";
+ echo $_POST['name'];
+ //echo "aman";
 }
 ?>
