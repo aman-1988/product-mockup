@@ -15,7 +15,7 @@ else
  $age = $_POST['age'];
  if($age == "22222")
  {
- echo "https://bouteeki-mockup.herokuapp.com/image.jpg";
+ echo '<img src="https://bouteeki-mockup.herokuapp.com/image.jpg" style="max-width:50%;">';
  } else {
   echo "Code is not correct";
  }
