@@ -13,7 +13,8 @@ else
   //  echo json_encode($_POST);
  $name = $_POST['name'];
  $age = $_POST['age'];
- echo $name." - ".$age;
+ echo "<img src='http://apitest.harjihousing.com/image-preview-upload/uploads/Mens-Summer-Fashion.png'>";
+ //echo $name." - ".$age;
  //echo "aman";
 }
 ?>
