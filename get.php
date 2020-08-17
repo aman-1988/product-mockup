@@ -16,6 +16,8 @@ else
  if($age == "22222")
  {
  echo "https://bouteeki-mockup.herokuapp.com/image.jpg";
+ } else {
+  echo "Code is not correct";
  }
  //echo $name." - ".$age;
  //echo "aman";
