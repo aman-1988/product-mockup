@@ -15,7 +15,7 @@ else
  $age = $_POST['age'];
  if($age == "22222")
  {
- echo "http://apitest.harjihousing.com/image-preview-upload/uploads/Mens-Summer-Fashion.png";
+ echo "https://bouteeki-mockup.herokuapp.com/image.jpg";
  }
  //echo $name." - ".$age;
  //echo "aman";
