@@ -17,7 +17,7 @@ else
  {
  //echo '<img src="https://bouteeki-mockup.herokuapp.com/image.jpg" style="max-width:50%;">';
  
- echo '<a href="https://goodnessforu.myshopify.com/cart/32056468766783:1">Buy Now</a>'
+ echo '<a href="https://goodnessforu.myshopify.com/cart/32056468766783:1">Buy Now</a>';
  
  
  
