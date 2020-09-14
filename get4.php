@@ -46,7 +46,7 @@ else
 //echo "<pre>";
    $line_items = $orderss['order']['line_items'];  
 //print_r($productss);
-     forearch ($line_items as $keys1 => $values1)
+     foreach ($line_items as $keys1 => $values1)
      {
          $productid = $line_items[$keys1]['product_id'];
          $variant_id = $line_items[$keys1]['variant_id'];
