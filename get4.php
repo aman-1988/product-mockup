@@ -42,9 +42,22 @@ else
  
  //echo '<a href="https://goodnessforu.myshopify.com/cart/32056468766783:1">Buy Now</a>';
  
- $productss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/orders/".$name.".json");
-echo "<pre>";
-print_r($productss);
+ $orderss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/orders/".$name.".json");
+//echo "<pre>";
+   $line_items = $orderss['order']['line_items'];  
+//print_r($productss);
+     forearch ($line_items as $keys1 => $values1)
+     {
+         $productid = $line_items[$keys1]['product_id'];
+         $variant_id = $line_items[$keys1]['variant_id'];
+         
+         $protitle = $line_items[$keys1]['title'];
+         $proname = $line_items[$keys1]['name'];
+         $variant_title = $line_items[$keys1]['variant_title'];
+         
+         echo $protitle." - ".$variant_title;
+     }
+     
  
  
  } else {
