@@ -92,7 +92,7 @@ $checkout_country = $cust_country;
          //echo $protitle." - ".$variant_title;
          
          $productss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/products/".$productid.".json");
-echo "<pre>";
+//echo "<pre>";
 print_r($productss['product']);
 //$product_line_items = $productss['products'];  
 $product_line_items = $productss['product'];  
