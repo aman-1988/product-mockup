@@ -49,6 +49,21 @@ else
  $orderdata = $orderss['order'];
      
      $custemail = $orderdata['email'];
+     $cust_first_name = $orderdata['shipping_address']['first_name'];
+     $cust_last_name = $orderdata['shipping_address']['last_name'];
+     $cust_address1 = $orderdata['shipping_address']['address1'];
+     $cust_city = $orderdata['shipping_address']['city'];
+     $cust_zip = $orderdata['shipping_address']['zip'];
+     $cust_country = $orderdata['shipping_address']['country'];
+     $cust_phone = $orderdata['shipping_address']['phone'];
+     
+     
+     echo $custemail."<br>";
+     echo $cust_first_name." ".$cust_last_name."<br>";
+     echo $cust_address1."<br>";
+     echo $cust_city."<br>";
+     echo $cust_zip."<br>";
+     echo $cust_country."<br>";
      
      
      
