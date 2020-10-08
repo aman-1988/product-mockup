@@ -110,7 +110,7 @@ $product_line_items = $productss['product'];
          $proimgs1 = $product_line_items['image']['src'];
          $price1 = $product_line_items['variants'][0]['price'];
          $defaultvar = $product_line_items['variants'][0]['id'];
-         $compare_at_price = $product_line_items['variants'][0]['compare_at_price'];
+         $compare_at_price_default = $product_line_items['variants'][0]['compare_at_price'];
          
          $allvariants = $product_line_items['variants'];
         // echo $protitle2;
@@ -121,6 +121,7 @@ $product_line_items = $productss['product'];
               $product_id = $allvariants[$keys4]['product_id'];
               $varttitle = $allvariants[$keys4]['title'];
               $vartprice = $allvariants[$keys4]['price'];
+              $compare_at_price = $allvariants[$keys4]['compare_at_price'];
               $vartoption1 = $allvariants[$keys4]['option1'];
               $vartoption2 = $allvariants[$keys4]['option2']; 
               $vartoption3 = $allvariants[$keys4]['option3'];
@@ -129,6 +130,7 @@ $product_line_items = $productss['product'];
               //echo $varttitle."<br>";
              // $varnames[] = "<option value='".$vartid."'>".$varttitle."</option>";
               echo '<input type="hidden" id="'.$vartid.'" value="'.$vartprice.'">';
+             if(!empty($compare_at_price)) { echo '<input type="hidden" id="compare'.$vartid.'" value="'.$compare_at_price.'">'; }
               //$varprices[] = $vartprice;
           }
 
@@ -141,14 +143,18 @@ $product_line_items = $productss['product'];
      //alert(var1);
      $('#selectedvar<?=$product_id;?>').val(var1);
      var pricess = $('#' + var1).val();
+     var compareprice =  $('#compare' + var1).val();    
      $('#pricess<?=$product_id;?>').val(pricess);
      $('#varprices<?=$product_id;?>').html('$ ' + pricess);
+     if(compareprice != '') {  $('#compshow<?=$product_id;?>').html('$ ' + compareprice);   }
+         
      //alert($('#' + var1).val());
      }
      
      function getsubmitted()
      {
-     var selectedvar1 =  $('#selectedvar<?=$product_id;?>').val();    
+     var selectedvar1 =  $('#selectedvar<?=$product_id;?>').val(); 
+     
     //alert(selectedvar1);
     var checkoutlink = "https://physix-gear-sport.myshopify.com/cart/" + selectedvar1 + ":1?checkout[email]=<?=$checkout_email;?>&checkout[shipping_address][city]=<?=$checkout_city;?>&checkout[shipping_address][first_name]=<?=$checkout_first_name;?>&checkout[shipping_address][last_name]=<?=$checkout_last_name;?>&checkout[shipping_address][address1]=<?=$checkout_address1;?>&checkout[shipping_address][zip]=<?=$checkout_zip;?>&checkout[shipping_address][country]=<?=$checkout_country;?>&checkout[shipping_address][province]=<?=$checkout_province;?>";
     location.href = checkoutlink;
@@ -176,9 +182,11 @@ foreach ($allvariants as $keys4 => $values4)
 </select>
 <input type="hidden" id="selectedvar<?=$product_id;?>" value="<?=$defaultvar;?>">
 <input type="hidden" id="pricess<?=$product_id;?>" value="<?=$price1;?>">
+<input type="hidden" id="comp_price<?=$product_id;?>" value="<?=$compare_at_price_default;?>">
 </div>    
  
 <div style="width:15%; margin-left:5%; display:inline-block; vertical-align:top;  text-align:right;"> 
+<?php if(!empty($compare_at_price_default)) { ?><span style="font-size:14px; color:#9c0707; font-weight:bold; text-align:right;" id="compshow<?=$product_id;?>">$ <?=$compare_at_price_default;?></span><?php } ?>
 <span style="font-size:18px; color:#9c0707; font-weight:bold; text-align:right;" id="varprices<?=$product_id;?>">$ <?=$price1;?></span>
 </div>
 
