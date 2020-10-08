@@ -35,8 +35,8 @@ else
     $_POST['extra']='2.POST Request from demo.com';
   //  echo json_encode($_POST);
  $name = $_POST['name'];
- $age = $_POST['age'];
- if($age == "22222")
+ $age = $_POST['upsell'];
+ if($age == "postupsell")
  {
  //echo '<img src="https://bouteeki-mockup.herokuapp.com/image.jpg" style="max-width:50%;">';
  
