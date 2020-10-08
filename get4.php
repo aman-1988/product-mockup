@@ -130,7 +130,7 @@ $product_line_items = $productss['product'];
               //echo $varttitle."<br>";
              // $varnames[] = "<option value='".$vartid."'>".$varttitle."</option>";
               echo '<input type="hidden" id="'.$vartid.'" value="'.$vartprice.'">';
-             if(!empty($compare_at_price)) { echo '<input type="hidden" id="compare'.$vartid.'" value="'.$compare_at_price.'">'; }
+              echo '<input type="hidden" id="compare'.$vartid.'" value="'.$compare_at_price.'">'; 
               //$varprices[] = $vartprice;
           }
 
