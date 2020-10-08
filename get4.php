@@ -154,13 +154,13 @@ $product_line_items = $productss['product'];
      
  </script>
 
-<div style="float:left; width:40%; border:1px solid #ccc; padding:15px;  margin:15px 0px;">
-<h1 style="float:left; width:100%; font-size:18px; color:#0d7700; margin-bottom:10px; margin-top:0px;"><?=$suo_popup_title;?></h1>
-<h4 style="float:left; width:100%; font-size:14px; color:#3a3a3a; margin-bottom:15px; margin-top:0px;"><?=$suo_popup_description;?></h4>
-<div style="float:left; width:100%;">
-<img src="<?=$proimgs1;?>" style="float:left; width:20%;">    
-<div style="float:left; width:54%; margin-left:5%;">
-<h3 style="float:left; width:100%; color:#045484; font-size:16px; margin-top:0px;"><?=$protitle2;?></h3> 
+<div style=" width:40%; border:1px solid #ccc; padding:15px;  margin:15px 0px;">
+<h1 style=" width:100%; font-size:18px; color:#0d7700; margin-bottom:10px; margin-top:0px;"><?=$suo_popup_title;?></h1>
+<h4 style=" width:100%; font-size:14px; color:#3a3a3a; margin-bottom:15px; margin-top:0px;"><?=$suo_popup_description;?></h4>
+<div style=" width:100%;">
+<img src="<?=$proimgs1;?>" style=" width:20%;">    
+<div style=" width:54%; margin-left:5%;">
+<h3 style=" width:100%; color:#045484; font-size:16px; margin-top:0px;"><?=$protitle2;?></h3> 
 <select name="allvarients" onchange="getvarients(this.value);">
 <?php 
 foreach ($allvariants as $keys4 => $values4)
@@ -176,14 +176,14 @@ foreach ($allvariants as $keys4 => $values4)
 <input type="hidden" id="pricess<?=$product_id;?>" value="<?=$price1;?>">
 </div>    
  
-<div style="float:left; width:15%; margin-left:5%;"> 
-<span style="font-size:18px; color:#9c0707; font-weight:bold; float:right;" id="varprices<?=$product_id;?>">$ <?=$price1;?></span>
+<div style="width:15%; margin-left:5%;"> 
+<span style="font-size:18px; color:#9c0707; font-weight:bold; text-align:right;" id="varprices<?=$product_id;?>">$ <?=$price1;?></span>
 </div>
 
         
 </div>
 
-<div style="float:left; width:100%; margin-top:2%;" ><button onclick="getsubmitted();" style="float:right; padding:7px 15px; font-size:15px; cursor:pointer; background:#00691c; color:#fff; outline:none; border:none; border-radius:5px;">Buy Now</button>
+<div style="width:100%; margin-top:2%; text-align:right;" ><button onclick="getsubmitted();" style=" padding:7px 15px; font-size:15px; cursor:pointer; background:#00691c; color:#fff; outline:none; border:none; border-radius:5px;">Buy Now</button>
 </div> 
 
 </div>
