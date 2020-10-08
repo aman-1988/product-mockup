@@ -92,7 +92,8 @@ $checkout_province = $cust_province;
         // echo "<br>";
          //echo $protitle." - ".$variant_title;
          
-         $productss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/products/".$productid.".json");
+         //$productss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/products/".$productid.".json");
+         $productss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/products/4537111740479.json");
 echo "<pre>";
 print_r($productss['product']);
 //$product_line_items = $productss['products'];  
