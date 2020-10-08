@@ -43,8 +43,8 @@ else
  //echo '<a href="https://goodnessforu.myshopify.com/cart/32056468766783:1">Buy Now</a>';
  
  $orderss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/orders/".$name.".json");
- echo "<pre>";
-    print_r($orderss);
+ //echo "<pre>";
+  //  print_r($orderss);
      
  $orderdata = $orderss['order'];
      
@@ -56,6 +56,7 @@ else
      $cust_zip = $orderdata['shipping_address']['zip'];
      $cust_country = $orderdata['shipping_address']['country'];
      $cust_phone = $orderdata['shipping_address']['phone'];
+     $cust_province = $orderdata['shipping_address']['province'];
      
      
     // echo $custemail."<br>";
@@ -74,7 +75,7 @@ $checkout_last_name = $cust_last_name;
 $checkout_address1 = $cust_address1;
 $checkout_zip = $cust_zip;
 $checkout_country = $cust_country;
-//$checkout_province = "New York";
+$checkout_province = $cust_province;
      
      
    $line_items = $orderss['order']['line_items'];  
