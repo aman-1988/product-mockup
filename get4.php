@@ -43,8 +43,15 @@ else
  //echo '<a href="https://goodnessforu.myshopify.com/cart/32056468766783:1">Buy Now</a>';
  
  $orderss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/orders/".$name.".json");
- echo "<pre>";
-     print_r($orderss);
+ //echo "<pre>";
+   //  print_r($orderss);
+     
+ $orderdata = $orderss['order'];
+     
+     $custemail = $orderdata['email'];
+     
+     
+     
    $line_items = $orderss['order']['line_items'];  
 //print_r($productss);
      foreach ($line_items as $keys1 => $values1)
