@@ -146,7 +146,7 @@ $product_line_items = $productss['product'];
      var compareprice =  $('#compare' + var1).val();    
      $('#pricess<?=$product_id;?>').val(pricess);
      $('#varprices<?=$product_id;?>').html('$ ' + pricess);
-     if(compareprice != '') {  $('#compshow<?=$product_id;?>').html('$ ' + compareprice);   }
+     if(compareprice != '') {  $('#compshow<?=$product_id;?>').html('$ ' + compareprice);   } else {   $('#compshow<?=$product_id;?>').html(''); }
          
      //alert($('#' + var1).val());
      }
