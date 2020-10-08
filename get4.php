@@ -43,8 +43,8 @@ else
  //echo '<a href="https://goodnessforu.myshopify.com/cart/32056468766783:1">Buy Now</a>';
  
  $orderss = getorder("https://".$SHOPIFY_SHOP."/admin/api/2020-07/orders/".$name.".json");
- //echo "<pre>";
-   //  print_r($orderss);
+ echo "<pre>";
+    print_r($orderss);
      
  $orderdata = $orderss['order'];
      
@@ -159,7 +159,7 @@ $product_line_items = $productss['product'];
 <h4 style=" width:100%; display:inline-block; font-size:14px; color:#3a3a3a; margin-bottom:15px; margin-top:0px;"><?=$suo_popup_description;?></h4>
 <div style=" width:100%; display:inline-block;">
 <img src="<?=$proimgs1;?>" style=" width:20%; display:inline-block;">    
-<div style=" width:54%; margin-left:5%; display:inline-block;">
+<div style=" width:52%; margin-left:5%; display:inline-block;">
 <h3 style=" width:100%; color:#045484; display:inline-block; font-size:16px; margin-top:0px;"><?=$protitle2;?></h3> 
 <select name="allvarients" onchange="getvarients(this.value);" style="appearance:auto; border:1px solid #000; border-radius:2px; padding:2px 4px; margin-top:7px;">
 <?php 
