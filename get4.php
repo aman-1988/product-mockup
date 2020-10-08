@@ -186,8 +186,8 @@ foreach ($allvariants as $keys4 => $values4)
 </div>    
  
 <div style="width:15%; margin-left:5%; display:inline-block; vertical-align:top;  text-align:right;"> 
-<?php if(!empty($compare_at_price_default)) { ?><span style="font-size:14px; color:#9c0707; font-weight:bold; text-align:right;" id="compshow<?=$product_id;?>">$ <?=$compare_at_price_default;?></span><?php } ?>
-<span style="font-size:18px; color:#9c0707; font-weight:bold; text-align:right;" id="varprices<?=$product_id;?>">$ <?=$price1;?></span>
+<?php if(!empty($compare_at_price_default)) { ?><span style="font-size:14px; color:#9c0707; font-weight:bold; text-align:right; width:100%; display:inline-block;" id="compshow<?=$product_id;?>">$ <?=$compare_at_price_default;?></span><?php } ?>
+<span style="font-size:18px; color:#9c0707; font-weight:bold; text-align:right; width:100%; display:inline-block;" id="varprices<?=$product_id;?>">$ <?=$price1;?></span>
 </div>
 
         
