@@ -77,8 +77,9 @@ else
          $protitle = $line_items[$keys1]['title'];
          $proname = $line_items[$keys1]['name'];
          $variant_title = $line_items[$keys1]['variant_title'];
-         
-         echo $protitle." - ".$variant_title;
+         echo $productid;
+         echo "<br>";
+         //echo $protitle." - ".$variant_title;
      }
      
  
