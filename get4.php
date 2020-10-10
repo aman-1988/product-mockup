@@ -157,7 +157,8 @@ $product_line_items = $productss['product'];
      var quantityselect = $('#quantityselect<?=$product_id;?>').val();
     //alert(selectedvar1);
     var checkoutlink = "https://physix-gear-sport.myshopify.com/cart/" + selectedvar1 + ":" + quantityselect +"?checkout[email]=<?=$checkout_email;?>&checkout[shipping_address][city]=<?=$checkout_city;?>&checkout[shipping_address][first_name]=<?=$checkout_first_name;?>&checkout[shipping_address][last_name]=<?=$checkout_last_name;?>&checkout[shipping_address][address1]=<?=$checkout_address1;?>&checkout[shipping_address][zip]=<?=$checkout_zip;?>&checkout[shipping_address][country]=<?=$checkout_country;?>&checkout[shipping_address][province]=<?=$checkout_province;?>";
-    location.href = checkoutlink;
+    //location.href = checkoutlink;
+         alert(checkoutlink);
      }
      
  </script>
