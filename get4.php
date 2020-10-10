@@ -181,7 +181,7 @@ foreach ($allvariants as $keys4 => $values4)
 ?>
 </select>
     <br>
-    <input type="number" id="quantityselect" name="quantity" min="1" value="1" max="15" style="appearance:auto; border:1px solid #000; border-radius:2px; padding:2px 4px; margin-top:7px;">
+   Quantity:  <input type="number" id="quantityselect" name="quantity" min="1" value="1" max="15" style="appearance:auto; border:1px solid #000; border-radius:2px; padding:2px 4px; margin-top:7px;">
 <input type="hidden" id="selectedvar<?=$product_id;?>" value="<?=$defaultvar;?>">
 <input type="hidden" id="pricess<?=$product_id;?>" value="<?=$price1;?>">
 <input type="hidden" id="comp_price<?=$product_id;?>" value="<?=$compare_at_price_default;?>">
