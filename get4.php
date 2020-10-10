@@ -34,7 +34,7 @@ else
 {
     $_POST['extra']='2.POST Request from demo.com';
   //  echo json_encode($_POST);
- $name = $_POST['name'];
+ $name = $_POST['orderid'];
  $age = $_POST['upsell'];
  if($age == "postupsell")
  {
