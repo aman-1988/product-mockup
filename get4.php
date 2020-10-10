@@ -153,10 +153,10 @@ $product_line_items = $productss['product'];
      
      function getsubmitted()
      {
-     var selectedvar1 =  $('#selectedvar<?=$product_id;?>').val(); 
-     
+      var selectedvar1 =  $('#selectedvar<?=$product_id;?>').val(); 
+     var quantityselect = $('#quantityselect<?=$product_id;?>').val();
     //alert(selectedvar1);
-    var checkoutlink = "https://physix-gear-sport.myshopify.com/cart/" + selectedvar1 + ":1?checkout[email]=<?=$checkout_email;?>&checkout[shipping_address][city]=<?=$checkout_city;?>&checkout[shipping_address][first_name]=<?=$checkout_first_name;?>&checkout[shipping_address][last_name]=<?=$checkout_last_name;?>&checkout[shipping_address][address1]=<?=$checkout_address1;?>&checkout[shipping_address][zip]=<?=$checkout_zip;?>&checkout[shipping_address][country]=<?=$checkout_country;?>&checkout[shipping_address][province]=<?=$checkout_province;?>";
+    var checkoutlink = "https://physix-gear-sport.myshopify.com/cart/" + selectedvar1 + ":" + quantityselect +"?checkout[email]=<?=$checkout_email;?>&checkout[shipping_address][city]=<?=$checkout_city;?>&checkout[shipping_address][first_name]=<?=$checkout_first_name;?>&checkout[shipping_address][last_name]=<?=$checkout_last_name;?>&checkout[shipping_address][address1]=<?=$checkout_address1;?>&checkout[shipping_address][zip]=<?=$checkout_zip;?>&checkout[shipping_address][country]=<?=$checkout_country;?>&checkout[shipping_address][province]=<?=$checkout_province;?>";
     location.href = checkoutlink;
      }
      
@@ -181,7 +181,7 @@ foreach ($allvariants as $keys4 => $values4)
 ?>
 </select>
     <br>
-   Quantity:  <input type="number" id="quantityselect" name="quantity" min="1" value="1" max="15" style="appearance:auto; border:1px solid #000; border-radius:2px; padding:2px 4px; margin-top:7px;">
+   Quantity: &nbsp; <input type="number" id="quantityselect<?=$product_id;?>" name="quantity" min="1" value="1" max="15" style="appearance:auto; border:1px solid #000; border-radius:2px; padding:2px 4px; margin-top:7px;">
 <input type="hidden" id="selectedvar<?=$product_id;?>" value="<?=$defaultvar;?>">
 <input type="hidden" id="pricess<?=$product_id;?>" value="<?=$price1;?>">
 <input type="hidden" id="comp_price<?=$product_id;?>" value="<?=$compare_at_price_default;?>">
